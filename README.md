@@ -1,1 +1,1 @@
-# BoilerAuth
+# BoilerKey Authenticator

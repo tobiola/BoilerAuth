@@ -1,5 +1,5 @@
 {
-  "name": "Boiler Auth",
+  "name": "BoilerKey Authenticator",
   "author": "Tobi Ola",
   "version": "1.0",
   "description": "Complete two step auth for Boiler Key",
@@ -12,7 +12,23 @@
       "20": "images/color-changer20.png",
       "40": "images/color-changer40.png"
     },
-    "default_title": "Boiler Auth",
+    "default_title": "BoilerKey Authenticator",
     "default_popup": "popup.html"
-  }
+  },
+  "icons": {
+    "25": "images/color-changer25.png",
+    "48": "images/color-changer48.png"
+  },
+  "content_scripts": [{
+    "matches": [
+        "<all_urls>"
+    ],
+    "js": ["js/content.js"],
+    "run_at": "document_end"
+  }],
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": true
+  },
+  "manifest_version": 2
 }
