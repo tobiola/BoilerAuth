@@ -30,5 +30,8 @@
     "scripts": ["js/background.js"],
     "persistent": true
   },
-  "manifest_version": 2
+  "manifest_version": 2,
+  "web_accessible_resources": [
+    "config.json"
+  ]
 }

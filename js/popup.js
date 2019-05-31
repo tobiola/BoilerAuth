@@ -1,3 +1,6 @@
+
+
+
 // get the buttons by id
 let aliceblue = document.getElementById('aliceblue');
 let cornsilk = document.getElementById('cornsilk');
